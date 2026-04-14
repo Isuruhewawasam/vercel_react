@@ -16,7 +16,8 @@ export default function Contact() {
   const handleWhatsAppSend = (e) => {
     e.preventDefault();
 
-    const phoneNumber = "94711659388";
+    const phoneNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
+    
 
     const message =
       `*නව විමසීමක් (Law Blog)*%0A%0A` +
