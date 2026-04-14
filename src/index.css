@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+
+
+
+@theme {
+  /* Custom Fonts */
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+
+  /* Custom Law Blog Colors (Vivid & Professional) */
+  --color-legal-navy: #0f172a;       /* තද නිල් */
+  --color-legal-gold: #d4af37;       /* රන් පැහැය */
+  --color-legal-gold-light: #f1e4bc; /* ලා රන් පැහැය */
+  --color-legal-surface: #f8fafc;    /* පසුබිම් ලා පැහැය */
+  --color-legal-accent: #1e293b;     /* තවත් තද පැහැයක් */
+
+  /* Animations (Vividness එක වැඩි කිරීමට) */
+  --animate-fade-in-up: fade-in-up 0.5s ease-out;
+}
+/* ලිපිය ඇතුළත Content එක සඳහා Styles */
+.prose-legal h2 {
+  @apply font-serif text-3xl font-bold text-legal-navy mt-10 mb-4;
+}
+
+.prose-legal p {
+  @apply font-sans text-lg text-slate-700 leading-relaxed mb-6;
+}
+
+.prose-legal blockquote {
+  @apply border-l-4 border-legal-gold pl-6 italic text-legal-navy/80 my-8 bg-legal-gold/5 py-4;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
