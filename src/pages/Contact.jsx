@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, MessageSquare } from 'lucide-react';
 import Navbar from '../components/layout/Navbar';
-import SEO from '../components/utils/Seo';
+import SEO from '../components/utils/SEO';
 
 const initialState = { name: '', email: '', subject: '', message: '' };
 
@@ -17,7 +17,7 @@ export default function Contact() {
     e.preventDefault();
 
     const phoneNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
-    
+
 
     const message =
       `*නව විමසීමක් (Law Blog)*%0A%0A` +

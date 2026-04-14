@@ -10,7 +10,7 @@ import {
   faCircleCheck
 } from '@fortawesome/free-solid-svg-icons';
 
-import SEO from '../components/utils/Seo';
+import SEO from '../components/utils/SEO';
 
 export default function About() {
   return (

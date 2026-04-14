@@ -12,7 +12,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import SEO from '../components/utils/Seo';
+import SEO from '../components/utils/SEO';
 
 export default function Categories() {
   const [selectedCategory, setSelectedCategory] = useState("All");

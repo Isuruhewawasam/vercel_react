@@ -4,7 +4,7 @@ import { ArrowLeft, Calendar, User, Clock, BookOpen } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 import Navbar from '../components/layout/Navbar';
 
-import SEO from '../components/utils/Seo';
+import SEO from '../components/utils/SEO';
 
 export default function BlogDetail() {
   const { id } = useParams();

@@ -5,7 +5,7 @@ import Navbar from '../components/layout/Navbar';
 import Hero from '../components/layout/Hero';
 import BlogCard from '../components/blogs/BlogCard';
 import { blogPosts } from '../data/blogPosts';
-import SEO from '../components/utils/Seo';
+import SEO from '../components/utils/SEO';
 
 
 export default function Home() {
