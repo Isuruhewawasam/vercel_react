@@ -11,6 +11,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import SEO from '../components/utils/SEO';
+import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
@@ -160,9 +161,9 @@ export default function About() {
       {/* CTA SECTION */}
       <section className="py-20 text-center">
         <h3 className="font-serif text-3xl font-bold text-legal-navy mb-8">අපගේ නීතිමය එකතුව සමඟ එක්වන්න</h3>
-        <button className="bg-legal-navy text-white px-10 py-4 rounded-full font-bold hover:bg-legal-gold hover:text-legal-navy transition-all shadow-xl active:scale-95">
+        <Link to={"/categories"}><button className="bg-legal-navy text-white px-10 py-4 rounded-full font-bold hover:bg-legal-gold hover:text-legal-navy transition-all shadow-xl active:scale-95">
           ලිපි කියවීමට යන්න
-        </button>
+        </button></Link>
       </section>
     </div>
   );

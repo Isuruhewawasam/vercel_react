@@ -16,6 +16,7 @@ import {
   faLinkedinIn 
 } from '@fortawesome/free-brands-svg-icons';
 
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -27,7 +28,7 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: faFacebookF, url: '#' },
+    { icon: faFacebookF, url: '' },
     { icon: faXTwitter, url: '#' },
     { icon: faLinkedinIn, url: '#' }
   ];
@@ -85,17 +86,29 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Section 3: Categories (Static for now) */}
-          <div>
-            <h4 className="font-serif text-xl font-bold mb-6 text-legal-gold">නීතිමය ක්ෂේත්‍ර</h4>
-            <ul className="space-y-4 text-slate-400">
-              {['Constitutional Law', 'Civil Law', 'Criminal Law'].map((cat) => (
-                <li key={cat} className="hover:text-white transition-colors cursor-pointer">
-                  {cat}
-                </li>
-              ))}
-            </ul>
-          </div>
+      {/* Section 3: Categories */}
+{/* Section 3: Categories */}
+{/* Section 3: Categories */}
+<div>
+  <h4 className="font-serif text-xl font-bold mb-6 text-legal-gold">නීතිමය ක්ෂේත්‍ර</h4>
+  <ul className="space-y-4 text-slate-400">
+    {[
+      { name: 'Constitutional Law', path: '/constitutional-law' },
+      { name: 'Civil Law', path: '/civil-law' },
+      { name: 'Criminal Law', path: '/criminal-law' }
+    ].map((cat) => (
+      <li key={cat.path}>
+        <Link 
+          to={cat.path} 
+          className="hover:text-white hover:pl-2 transition-all duration-300 cursor-pointer flex items-center gap-2 group"
+        >
+          <span className="text-legal-gold/50 group-hover:text-legal-gold transition-colors">•</span> 
+          {cat.name}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
 
           {/* Section 4: Contact Info */}
           <div className="space-y-6">
@@ -107,11 +120,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-4">
                 <FontAwesomeIcon icon={faEnvelope} className="text-legal-gold" />
-                <span>info@legalinsight.lk</span>
+                <span>isuruhewawasam@gmail.com</span>
               </div>
               <div className="flex items-center gap-4">
                 <FontAwesomeIcon icon={faPhone} className="text-legal-gold" />
-                <span>+94 11 234 5678</span>
+                <span>+94 71 1659 388</span>
               </div>
             </div>
           </div>
