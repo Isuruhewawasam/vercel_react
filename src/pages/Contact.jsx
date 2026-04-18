@@ -32,9 +32,9 @@ export default function Contact() {
   };
 
   const contactInfo = [
-    { icon: Mail,   label: "ඊමේල්",   value: "info@lawblog.com" },
-    { icon: Phone,  label: "දුරකථන",  value: "+94 7X XXX XXXX" },
-    { icon: MapPin, label: "ස්ථානය",  value: "Athurugiriya, Sri Lanka" },
+    { icon: Mail,   label: "ඊමේල්",   value: "isuruhewawasam@gmail.com" },
+    { icon: Phone,  label: "දුරකථන",  value: "+94 71 1659 388" },
+    { icon: MapPin, label: "ස්ථානය",  value: "Colombo, Sri Lanka" },
   ];
 
   const inputClass =
